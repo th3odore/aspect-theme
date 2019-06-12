@@ -1,0 +1,16 @@
+<div id="site-footer">
+    <tpl:Block name="footer-script">
+        <script type="text/javascript" src="{{tpl:BlogQmarkURL}}pf={{tpl:BlogJsJQuery}}/jquery.js"></script>
+        <script type="text/javascript" src="{{tpl:BlogQmarkURL}}pf={{tpl:BlogJsJQuery}}/jquery.cookie.js"></script>
+        <script type="text/javascript" src="{{tpl:BlogParentThemeURL}}/js/aspect.min.js"></script>
+        {{tpl:AspectPostScripts}}
+    </tpl:Block>
+
+    <tpl:Block name="footer-copyright">
+        {{tpl:AspectConfig option="copyright"}}
+    </tpl:Block>
+
+    <div class="footer-div">{{tpl:Widgets type="custom"}}</div>
+
+    {{tpl:SysBehavior behavior="publicFooterContent"}}
+</div>
